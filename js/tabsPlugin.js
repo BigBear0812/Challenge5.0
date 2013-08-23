@@ -1,5 +1,4 @@
 (function ( $ ) {
- 
     $.fn.tabify = function(vertical) {
 		var outer = this;
 		var tabList = outer.children('ul').first();
