@@ -1,15 +1,16 @@
 .tab-list{list-style-type: none; margin: 0px; padding: 0px;}
-.tab-item{float:left; font-size:14px; padding: 5px 0px;margin:0px 4px 0px 0px; border:1px solid black; border-bottom-width: 0px;background:#ddd; border-radius: 10px 10px 0px 0px;}
-.tab-link{text-decoration: none; padding: 5px 40px; border-radius: 10px 10px 0px 0px;}
-.tab-item.active{position:relative; background:white; top: 1px; }
-.tab-item.active .tab-link{background-color: white;}
-.tab-page{border-left: 1px solid; border-top: 1px solid; display: none; font-size:14px; z-index:10; padding: 20px;}
+.tab-item{float:left; font-size:14px; padding: 7px 0px;margin:0px 4px 0px 0px; border:1px solid black; border-bottom-width: 0px; background-color:#BF7330; border-radius: 10px 10px 0px 0px;}
+.tab-link{text-decoration: none; padding: 7px 15px; border-radius: 10px 10px 0px 0px; color: black;}
+.tab-item.active{position:relative; background-color:#FF9A40; top: 1px; }
+.tab-item.active .tab-link{background-color:#FF9A40;}
+.tab-page{border: 1px solid; display: none; font-size:14px; z-index:10; padding: 20px; background-color:#FF9A40; border-radius: 0px 10px 10px 10px;}
 .tab-page.active{display: block;clear: both;}
-
-.tab-vertical-list{list-style-type: none; padding: 0px; margin: 0px; float: left;font-size:0px; border-right: 1px solid;}
-.tab-vertical-item{margin-bottom: 4px; background-color: #ddd; font-size:14px; border:1px solid black; border-right-width: 0px;}
-.tab-vertical-link{text-decoration: none; padding: 7px 7px; display: block;}
-.tab-vertical-item.active{background-color: white;position:relative;left: 1px; }
-.tab-vertical-item.active .tab-vertical-link{background-color: white;}
-.tab-vertical-page{border-top: 1px solid; float: left;display: none;font-size:14px; padding: 20px;}
+.tab-link:hover{background-color: #FFB573;}
+.tab-vertical-list{list-style-type: none; padding: 0px; margin: 0px; float: left;font-size:0px; }
+.tab-vertical-item{margin-bottom: 4px; background-color: #BF7330; font-size:14px; border:1px solid black; border-right-width: 0px;border-radius: 10px 0px 0px 10px;}
+.tab-vertical-link{text-decoration: none; padding: 10px 15px; display: block;border-radius: 10px 0px 0px 10px; color: black;}
+.tab-vertical-item.active{background-color:#FF9A40; position:relative;left: 1px; }
+.tab-vertical-item.active .tab-vertical-link{background-color:#FF9A40;}
+.tab-vertical-page{border: 1px solid; display: none;font-size:14px; padding: 20px; margin: 0px 0px 0px -1px; background-color:#FF9A40; border-radius: 0px 10px 10px 10px;}
 .tab-vertical-page.active{display: block;}
+.tab-vertical-link:hover{background-color: #FFB573;}

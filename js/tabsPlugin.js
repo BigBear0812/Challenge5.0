@@ -1,5 +1,5 @@
 (function ( $ ) {
-    $.fn.tabify = function(vertical, maxWidth) {
+    $.fn.tabify = function(vertical) {
 		var outer = this;
 		var tabList = outer.children('ul').first();
 		$(tabList).show();
@@ -26,6 +26,10 @@
 			$(tabs).addClass("tab-vertical-item");
 			$(links).addClass("tab-vertical-link");
 			$(tabContentPanes).addClass("tab-vertical-page");
+			var height = $(tabList).css("height");
+			var margin = $(tabList).css("width");
+			$(tabContentPanes).css("min-height", height);
+			$(tabContentPanes).css("margin-left", margin);
 		}
 		else{
 			$(tabList).addClass("tab-list");
@@ -33,12 +37,12 @@
 			$(links).addClass("tab-link");
 			$(tabContentPanes).addClass("tab-page");
 		}
-		if (maxWidth !== undefined){
-			$(tabContentPanes).css("max-width", maxWidth + "px");
-		}
-		else{
-			$(tabContentPanes).css("max-width", "700px");
-		}
+		// if (maxWidth !== undefined){
+			// $(tabContentPanes).css("max-width", maxWidth + "px");
+		// }
+		// else{
+			// $(tabContentPanes).css("max-width", "700px");
+		// }
 		return outer;
     };
  
